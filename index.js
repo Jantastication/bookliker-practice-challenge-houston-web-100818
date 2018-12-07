@@ -12,55 +12,7 @@ const userID = 1;
 const username = "pouros";
 
 let books;
-
-// const fetchData = function() {
-//   fetch(API)
-//     .then(function(response) {
-//       return response.json();
-//     })
-//     .then(function(result) {
-//       books = result;
-//       console.log(books);
-//       renderBookList();
-//     });
-// };
-// const renderBookList = function() {
-//   bookList.innerHTML = "";
-
-//   books.forEach(book => {
-//     const bookItem = document.createElement("li");
-//     bookItem.innerHTML = book.title;
-//     bookList.append(bookItem);
-//     renderBookDetail(book);
-//   });
-//   console.log(books);
-// };
-
-// const renderBookDetail = function(book) {
-//   showPanel.innerHTML = "";
-//   console.log(books);
-
-//   const title = document.createElement("p");
-//   title.innerHTML = book.title;
-//   const img_url = document.createElement("img");
-//   img_url.src.innerHTML = book.img_url;
-//   const description = document.createElement("p");
-//   description.innerHTML = book.description;
-//   const list = document.createElement("ul");
-
-//   if (book.users) {
-//     book.users.forEach(function(user) {
-//       const userLi = document.createElement("li");
-//       userLi.innerText = user.username;
-//       // user.id = `${user.id}`;
-//       list.append(userLi);
-//     });
-//   }
-
-//   showPanel.append(title, img_url, description, list);
-// };
-
-// fetchData();
+let users;
 
 function fetchAllBooks() {
   fetch("http://localhost:3000/books")
@@ -122,7 +74,8 @@ function renderDetails(book) {
     })
       .then(response => response.json())
       .then(book => {
-        //something happens
+        //something happens here
+        // users.push(username);
         renderDetails(book);
         // console.log(book)
       });
@@ -132,6 +85,7 @@ function renderDetails(book) {
   button.type = "button";
   button.value = "Like";
   button.addEventListener("click", function(event) {
+    console.log("click");
     updateBook(book.id);
   });
 
