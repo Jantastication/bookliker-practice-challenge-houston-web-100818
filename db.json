@@ -14,7 +14,8 @@
           "id": 8,
           "username": "goodwin"
         }
-      ]
+      ],
+      "user_id": 2
     },
     {
       "id": 2,
@@ -50,7 +51,8 @@
           "id": 9,
           "username": "nikolaus"
         }
-      ]
+      ],
+      "user_id": 16
     },
     {
       "id": 4,
@@ -66,7 +68,8 @@
           "id": 8,
           "username": "goodwin"
         }
-      ]
+      ],
+      "user_id": 8
     },
     {
       "id": 5,
@@ -102,7 +105,8 @@
           "id": 4,
           "username": "batz"
         }
-      ]
+      ],
+      "user_id": 1
     },
     {
       "id": 7,
@@ -138,7 +142,8 @@
           "id": 2,
           "username": "auer"
         }
-      ]
+      ],
+      "user_id": 8
     },
     {
       "id": 9,
@@ -174,7 +179,8 @@
           "id": 10,
           "username": "macejkovic"
         }
-      ]
+      ],
+      "user_id": 8
     }
   ],
   "users": [
